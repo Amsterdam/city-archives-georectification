@@ -34,9 +34,9 @@ H(rows)
     colors: row.kleuren,
     gcps: [
       makeGcp(row, 'ul', parseInt(row.hoogte)),
-      makeGcp(row, 'll', parseInt(row.hoogte)),
-      makeGcp(row, 'ul', parseInt(row.hoogte)),
-      makeGcp(row, 'lr', parseInt(row.hoogte))
+      makeGcp(row, 'ur', parseInt(row.hoogte)),
+      makeGcp(row, 'lr', parseInt(row.hoogte)),
+      makeGcp(row, 'll', parseInt(row.hoogte))
     ],
     imageId: row.imgfn,
     scanWidth: parseInt(row.breedte),
