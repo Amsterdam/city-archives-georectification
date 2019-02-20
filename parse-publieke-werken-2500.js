@@ -30,8 +30,8 @@ H(rows)
     id: parseInt(row.versienr),
     sheet: row.kaartnr,
     period: row.datering.split('-').map((year) => parseInt(year)),
-    // uitvoering: 'Druk in zwart. Geannoteerd',
-    // kleuren: 'zwart'
+    design: row.uitvoering,
+    colors: row.kleuren,
     gcps: [
       makeGcp(row, 'ul', parseInt(row.hoogte)),
       makeGcp(row, 'll', parseInt(row.hoogte)),
