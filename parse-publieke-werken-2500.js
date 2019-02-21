@@ -31,7 +31,7 @@ H(rows)
     sheet: row.kaartnr,
     period: row.datering.split('-').map((year) => parseInt(year)),
     design: row.uitvoering,
-    colors: row.kleuren,
+    colors: row.kleuren.split(','),
     gcps: [
       makeGcp(row, 'ul', parseInt(row.hoogte)),
       makeGcp(row, 'ur', parseInt(row.hoogte)),
