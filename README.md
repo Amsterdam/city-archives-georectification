@@ -15,3 +15,9 @@ __Note: make sure to install Node.js and the dependencies of the script first!__
 The 1:2500 Dienst der Publieke Werken maps are georectified by [Jan Hartmann](http://www.uva.nl/profiel/h/a/j.l.h.hartmann/j.l.h.hartmann.html). To convert the source CSV to GeoJSON, run:
 
     node parse-publieke-werken-2500.js -t geojson source-data/publieke-werken-2500-paspunten.csv > publieke-werken-2500.geojson
+
+## Atlas Loman
+
+The [19th century neighbourhood maps from publisher J.C. Loman](https://archief.amsterdam/inventarissen/inventaris/10043.nl.html?p=3:315&t=346) are georectified by [Jan Hartmann](http://www.uva.nl/profiel/h/a/j.l.h.hartmann/j.l.h.hartmann.html). To convert the source CSV to GeoJSON, run:
+
+    node parse-atlas-loman.js -t geojson source-data/atlas-loman.csv > atlas-loman.geojson
